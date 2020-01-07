@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Author">
-    <title>Titulo</title>
+    <title>Concatena objeto</title>
 	
     <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -27,8 +27,9 @@
         uf: 'SC'
     };
 
-   var resultado = 'O usuário mora em ' + endereco.cidade + ' / ' +  endereco.uf + ', no bairro ' +  endereco.bairro + ', na rua "'+ endereco.rua + '" com nº ' +  endereco.Numero;
-   console.log(resultado);
+    const { rua, Numero, bairro, cidade, uf } = endereco;
+console.log(`O usuário mora em ${cidade} / ${uf}, no bairro
+${bairro}, na rua "${rua}" com nº ${Numero}.`);
     
     </script>
 </body>
