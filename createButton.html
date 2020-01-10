@@ -1,0 +1,39 @@
+<!-- ******************************************
+*  Author : Leandro Ferreira Netto 
+*  Created On : Wed Jan 08 2020
+*  File : createButton.html
+******************************************* -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Author">
+    <title>Create Button</title>
+    
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/mains"></script> -->
+</head>
+
+<body>
+    <div id="app">
+    </div>
+
+   <script>
+       var linkElement = document.createElement('a');
+
+       linkElement.setAttribute('href', 'http://rocketseat.com.br');
+
+       var textElement = document.createTextNode('Acessar site');
+       linkElement.appendChild(textElement);
+
+       var containerElement = document.querySelector('#app');
+       containerElement.appendChild(linkElement);
+
+   
+   </script>
+</body>
+
+</html>
